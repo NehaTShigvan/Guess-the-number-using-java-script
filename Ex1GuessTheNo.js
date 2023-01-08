@@ -13,17 +13,16 @@ do{
     input = prompt("Enter a number: ")
     input = Number.parseInt(input)
     if(input==number){
-        console.log("Great! You guessed the correct number. ")
+        alert("Great! You guessed the correct number. ")
     }
     else if(input> number){
-        console.log("Wrong! Please enter the smaller number.")
+        alert("Wrong! Please enter the smaller number.")
     }
     else if(input< number){
-        console.log("Wrong! Please enter the larger number.")
+        alert("Wrong! Please enter the larger number.")
     }
     chances += 1
 
 }while(input != number)
 
-console.log("The actual number is " + number)
-console.log("Your score is", 100-chances)
+alert(`The actual number is ${number} \nYour score is ${100-chances}`)
